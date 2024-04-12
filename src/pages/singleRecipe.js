@@ -25,7 +25,7 @@ const SingleRecipe = () => {
     const fetchRecipeDetails = async () => {
       try {
         const response = await fetch(
-          `http://localhost:3002/recipes/details/${recipeId}`,
+          `https://recipe-app-server-6jcc.onrender.com/recipes/details/${recipeId}`,
           {
             method: "GET",
             headers: {
@@ -48,7 +48,7 @@ const SingleRecipe = () => {
     const data = { recipeId, userId };
     try {
       if (userId) {
-        await fetch("http://localhost:3002/recipes", {
+        await fetch("https://recipe-app-server-6jcc.onrender.com/recipes", {
           method: "PUT",
           headers: {
             "Content-type": "application/json",

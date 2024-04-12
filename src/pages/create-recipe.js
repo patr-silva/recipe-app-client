@@ -53,7 +53,7 @@ const CreateRecipe = () => {
     event.preventDefault();
 
     try {
-      await fetch("http://localhost:3002/recipes", {
+      await fetch("https://recipe-app-server-6jcc.onrender.com/recipes", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
