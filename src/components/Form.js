@@ -1,4 +1,3 @@
-import logo from "../images/logo.png";
 import { Link } from "react-router-dom";
 import welcome from "../images/welcome.png";
 import welcome_back from "../images/welcome_back.png";

@@ -4,7 +4,6 @@ import { useCookies } from "react-cookie";
 import { useGetUserID } from "../hooks/useGetUserID";
 import { toast } from "react-toastify";
 
-import logo from "../images/logo.png";
 import title from "../images/create.png";
 
 const CreateRecipe = () => {
