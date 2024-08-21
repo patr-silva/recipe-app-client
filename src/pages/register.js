@@ -12,15 +12,14 @@ const Register = () => {
 
   const onSubmit = async (event) => {
     event.preventDefault();
-
     const user = { username, password };
 
     try {
-      const response = await fetch("https://recipe-app-server-6jcc.onrender.com/auth/register", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(user),
-      });
+        const response = await fetch("http://localhost:3002/auth/register", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(user),
+        });
 
       if (response.ok) {
         toast.success("You are registered 🥳", {

@@ -16,7 +16,7 @@ const SavedRecipes = () => {
     const fetchSavedRecipes = async () => {
       try {
         const response = await fetch(
-          `https://recipe-app-server-6jcc.onrender.com/recipes/saved-recipes/${userId}`,
+          `http://localhost:3002.com/recipes/saved-recipes/${userId}`,
           {
             method: "GET",
             headers: {

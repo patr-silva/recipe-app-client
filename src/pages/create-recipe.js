@@ -52,7 +52,7 @@ const CreateRecipe = () => {
     event.preventDefault();
 
     try {
-      await fetch("https://recipe-app-server-6jcc.onrender.com/recipes", {
+      await fetch("http://localhost:3002/recipes", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -83,7 +83,7 @@ const CreateRecipe = () => {
   return (
     <div className='flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8'>
       <div className='sm:mx-auto sm:w-full sm:max-w-sm flex justify-center'>
-      <img src={title} alt="create recipe" className="h-[15vh]"/>
+        <img src={title} alt='create recipe' className='h-[15vh]' />
         {/* <img className='mx-auto h-10 w-auto' src={logo} alt='logo' />
         <h2 className='mt-10 text-center text-6xl leading-9 tracking-tight text-orange-400'>
           Create Recipe

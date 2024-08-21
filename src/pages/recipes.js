@@ -9,7 +9,7 @@ const Recipes = () => {
   useEffect(() => {
     const fetchRecipe = async () => {
       try {
-        const response = await fetch("https://recipe-app-server-6jcc.onrender.com/recipes", {
+        const response = await fetch("http://localhost:3002/recipes", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
